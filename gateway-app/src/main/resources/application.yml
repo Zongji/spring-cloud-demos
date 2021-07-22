@@ -1,22 +1,27 @@
 server:
   port: 8080
 
+debug: true
+
 spring:
   application:
     name: gateway-app
   cloud:
     gateway:
       discovery:
-        locator: true
-        routes:
-          - id: user-app
-            uri: lb://user-app
-            predicates:
-              - path=/user/**
-          - id: product-app
-            uri: lb://product-app
-            predicates:
-              - path=/product/**
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+ # 没生效
+#          routes:
+#          - id: user-app
+#            uri: lb://user-app
+#            predicates:
+#              - path=/user/**
+#          - id: product-app
+#            uri: lb://product-app
+#            predicates:
+#              - path=/product/**
 
 
 eureka:
