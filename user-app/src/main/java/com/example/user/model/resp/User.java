@@ -1,4 +1,4 @@
-package com.example.user.model;
+package com.example.user.model.resp;
 
 public class User {
     private String name;
