@@ -10,6 +10,7 @@
         <module>gateway-app</module>
         <module>discovery-app</module>
         <module>config-app</module>
+        <module>sleuth-zipkin-app</module>
     </modules>
 
     <parent>
