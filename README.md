@@ -3,7 +3,18 @@
 spring cloud 练习项目，
 全面包含spring cloud 的各个重要组件
 
+## 说明
+这个分支为使用nacos作为注册中心和配置中心
 
+## usage
+1. 启动nacos
+```shell
+ # windows下
+./startup.cmd -m standalone
+```
+
+nacos文档
+https://nacos.io/zh-cn/docs/quick-start.html
 
 
 
@@ -25,5 +36,6 @@ git remote add origin https://github.com/Zongji/spring-cloud-demos.git
 git branch -M main
 git push -u origin main
 ```
+
 
 
