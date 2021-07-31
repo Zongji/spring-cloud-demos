@@ -31,7 +31,7 @@ public class UserController {
 
         User user = new User();
         user.setId("11111111111111");
-        user.setName("liming");
+        user.setName(userNacosProperties.getName());
         user.setAge(Integer.valueOf(userNacosProperties.getAge()));
         return user;
     }

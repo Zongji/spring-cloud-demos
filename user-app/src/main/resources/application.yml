@@ -8,6 +8,8 @@ spring:
   nacos:
     discovery:
       serverAddr: 127.0.0.1:8848
+    config:
+      fileExtension: properties
 
   zipkin:
     baseUrl: http://localhost:9411

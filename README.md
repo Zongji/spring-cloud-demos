@@ -16,7 +16,12 @@ spring cloud 练习项目，
 nacos文档
 https://nacos.io/zh-cn/docs/quick-start.html
 
-
+## 配置中心使用
+Data ID:        nacos-config.yaml
+Group  :        DEFAULT_GROUP
+配置格式:        YAML
+配置内容:        user.name: nacos-config-yaml
+user.age: 68
 
 ## git 操作提示
 …or create a new repository on the command line

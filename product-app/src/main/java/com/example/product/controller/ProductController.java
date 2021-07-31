@@ -1,9 +1,11 @@
 package com.example.product.controller;
 
+import com.example.product.config.ProductNacosProperties;
 import com.example.product.model.resp.Product;
 import com.google.common.collect.Lists;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,11 +16,13 @@ import java.util.List;
 @RequestMapping("/product")
 public class ProductController {
     private final static Logger logger = LoggerFactory.getLogger(ProductController.class);
+    @Autowired
+    private ProductNacosProperties productNacosProperties;
 
     @GetMapping("/all")
     public String all() {
         logger.info("url: /all");
-        return "all prouct";
+        return "all prouct" + productNacosProperties.getName();
     }
 
     @GetMapping("/get-favor-products")

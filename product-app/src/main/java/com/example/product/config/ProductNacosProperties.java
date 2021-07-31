@@ -1,4 +1,4 @@
-package com.example.user.config;
+package com.example.product.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -6,12 +6,12 @@ import org.springframework.stereotype.Component;
 
 @RefreshScope
 @Component
-public class UserNacosProperties {
+public class ProductNacosProperties {
 
     @Value("${user.age}")
     private String age;
 
-    @Value("${user.name}")
+    @Value("${my.name}")
     private String name;
 
     public String getAge() {
