@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "d6de8ae6-f861-46e1-803c-6b5695fe1d19",
+		"name": "spring-cloud-demos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "gateway",
+			"item": [
+				{
+					"name": "http://{{gateway_host}}/user/all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{gateway_host}}/user/all",
+							"protocol": "http",
+							"host": [
+								"{{gateway_host}}"
+							],
+							"path": [
+								"user",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://{{gateway_host}}/user/get-favor-products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{gateway_host}}/user/get-favor-products?userId=0002",
+							"protocol": "http",
+							"host": [
+								"{{gateway_host}}"
+							],
+							"path": [
+								"user",
+								"get-favor-products"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "0002"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://{{gateway_host}}/product/all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{gateway_host}}/product/all",
+							"protocol": "http",
+							"host": [
+								"{{gateway_host}}"
+							],
+							"path": [
+								"product",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user-app",
+			"item": [
+				{
+					"name": "http://localhost:8082/user/all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/user/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"user",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product-app",
+			"item": [
+				{
+					"name": "http://localhost:8081/product/all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/product/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"product",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/product/get-favor-products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/product/get-favor-products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"product",
+								"get-favor-products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "http://httpbin.org:80/get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://httpbin.org:80/ip",
+					"protocol": "http",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"port": "80",
+					"path": [
+						"ip"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
