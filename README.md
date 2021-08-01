@@ -12,6 +12,10 @@ spring cloud 练习项目，
  # windows下
 ./startup.cmd -m standalone
 ```
+2. 启动zipkin
+```
+java -jar zipkin.jar
+```
 
 nacos文档
 https://nacos.io/zh-cn/docs/quick-start.html
